@@ -53,6 +53,7 @@ dprint "General CLI Tools"
 brew install coreutils
 brew install git
 brew install rsync
+brew install syncthing
 brew install wget
 brew install ffmpeg
 brew install yt-dlp

@@ -187,6 +187,33 @@ alias yt720="yt-dlp -S res,vcodec:h264,res:720,acodec:m4a"
 EOF
 
 ############################################################
+# Some Sensible Defaults                                   #
+############################################################
+
+dprint "Setting defaults..."
+
+dprint "Expand save panels by default"
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
+
+dprint "Expand print panels by default"
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
+
+dprint "Save to disk (not iCloud) by default"
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+dprint "Save screenshots as PNGs to a custom folder, and disable shadows"
+mkdir -p ~/Screenshots
+defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
+defaults write com.apple.screencapture type -string "png"
+defaults write com.apple.screencapture disable-shadow -bool true
+
+dprint "Disable .DS_Store files on network and USB volumes"
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+############################################################
 # Manual Setup Remaining                                   #
 ############################################################
 

@@ -198,6 +198,7 @@ dprint ">      - Native Access"
 dprint ">      - IK Product Manager"
 dprint "> 3. Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home"
 dprint "> 4. Build whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"
+dprint "> 5. Install uBlock Origin in Firefox"
 
 ############################################################
 # Complete!                                                #

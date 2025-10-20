@@ -146,6 +146,9 @@ mas install 409183694
 dprint "Scrivener..."
 mas install 1310686187
 
+dprint "Pixelmator Pro..."
+mas install 1289583905
+
 dprint "Logic Pro..."
 mas install 634148309
 
@@ -163,11 +166,7 @@ brew uninstall mas
 ############################################################
 
 dprint "Home directory folders..."
-mkdir -p ~/blog
-mkdir -p ~/src
-mkdir -p ~/mus
-mkdir -p ~/wri
-mkdir -p ~/vid
+mkdir -p ~/projects
 mkdir -p ~/tmp
 
 dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Terminal settings)"
@@ -219,14 +218,14 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 ############################################################
 
 dprint "🚶🏻‍♂️ A few remaining manual steps are still needed..."
-dprint "> 1. Install Sony Digital Paper App: https://www.sony.com/electronics/support/articles/S1F1667"
-dprint "> 2. Install products / plugins from Musical Tools:"
+dprint "> 1. Install uBlock Origin in Firefox"
+dprint "> 2. Install Sony Digital Paper App: https://www.sony.com/electronics/support/articles/S1F1667"
+dprint "> 3. Install products / plugins from Musical Tools:"
 dprint ">      - FabFilter (get from backup)"
 dprint ">      - Native Access"
 dprint ">      - IK Product Manager"
-dprint "> 3. Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home"
-dprint "> 4. Build whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"
-dprint "> 5. Install uBlock Origin in Firefox"
+dprint "> 4. Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home"
+dprint "> 5. Build whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"
 
 ############################################################
 # Complete!                                                #

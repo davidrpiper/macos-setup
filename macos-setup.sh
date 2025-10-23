@@ -73,9 +73,6 @@ brew install rg
 brew install jq
 brew install cmake
 
-dprint "Claude Code"
-npm install -g @anthropic-ai/claude-code
-
 ############################################################
 # Basic Applications                                       #
 ############################################################
@@ -125,41 +122,6 @@ brew install --cask visual-studio-code
 dprint "(Brew Cask) Video Applications..."
 
 brew install --cask obs
-
-############################################################
-# Mac App Store                                            #
-############################################################
-
-dprint "Mac App Store Apps..."
-
-dprint "Installing mas"
-brew install mas
-
-dprint "The Unarchiver..."
-mas install 425424353
-
-dprint "Pages, Numbers, Keynote..."
-mas install 409201541
-mas install 409203825
-mas install 409183694
-
-dprint "Scrivener..."
-mas install 1310686187
-
-dprint "Pixelmator Pro..."
-mas install 1289583905
-
-dprint "Logic Pro..."
-mas install 634148309
-
-dprint "Final Cut Pro..."
-mas install 424389933
-
-dprint "And of course, Xcode..."
-mas install 497799835
-
-dprint "Uninstalling mas"
-brew uninstall mas
 
 ############################################################
 # Personalised Config                                      #
@@ -217,15 +179,52 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # Manual Setup Remaining                                   #
 ############################################################
 
-dprint "🚶🏻‍♂️ A few remaining manual steps are still needed..."
+dprint "🚶🏻‍♂️ A few remaining manual steps are needed, while the Mac App Store apps install:"
 dprint "> 1. Install uBlock Origin in Firefox"
-dprint "> 2. Install Sony Digital Paper App: https://www.sony.com/electronics/support/articles/S1F1667"
-dprint "> 3. Install products / plugins from Musical Tools:"
+dprint "> 2. Set up the Catppuccin Latte theme for the Terminal (it's in Downloads), and IDEs"
+dprint "> 3. Install Sony Digital Paper App: https://www.sony.com/electronics/support/articles/S1F1667"
+dprint "> 4. Build and install whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"
+dprint "> 5. Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home"
+dprint "> 6. Install products / plugins from Musical Tools:"
 dprint ">      - FabFilter (get from backup)"
 dprint ">      - Native Access"
 dprint ">      - IK Product Manager"
-dprint "> 4. Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home"
-dprint "> 5. Build whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"
+dprint "> ... And now we wait:"
+
+############################################################
+# Mac App Store                                            #
+############################################################
+
+dprint "Mac App Store Apps..."
+
+dprint "Installing mas"
+brew install mas
+
+dprint "Monodraw..."
+mas install 920404675
+
+dprint "Scrivener..."
+mas install 1310686187
+
+dprint "Pixelmator Pro..."
+mas install 1289583905
+
+dprint "Pages, Numbers, Keynote..."
+mas install 409201541
+mas install 409203825
+mas install 409183694
+
+dprint "Logic Pro..."
+mas install 634148309
+
+dprint "Final Cut Pro..."
+mas install 424389933
+
+dprint "And of course, Xcode..."
+mas install 497799835
+
+dprint "Uninstalling mas"
+brew uninstall mas
 
 ############################################################
 # Complete!                                                #

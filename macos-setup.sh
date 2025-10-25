@@ -84,7 +84,6 @@ brew install --cask discord
 brew install --cask firefox
 brew install --cask gimp
 brew install --cask paragon-ntfs
-brew install --cask obsidian
 brew install --cask slack
 brew install --cask vlc
 brew install --cask zoom

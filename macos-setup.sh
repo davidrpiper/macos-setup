@@ -106,8 +106,9 @@ brew install --cask vcv-rack
 # Code & Writing Applications                              #
 ############################################################
 
-dprint "(Brew Cask) Coding and Writing Applications..."
+dprint "(Brew Cask) Coding, Writing and Reading Applications..."
 
+brew install --cask calibre
 brew install --cask clion
 brew install --cask inky
 brew install --cask mactex
@@ -115,11 +116,13 @@ brew install --cask sublime-text
 brew install --cask visual-studio-code
 
 ############################################################
-# Video Applications                                       #
+# Video and Games                                          #
 ############################################################
 
-dprint "(Brew Cask) Video Applications..."
+dprint "(Brew Cask) Games and Streaming Applications..."
 
+brew install --cask steam
+brew install --cask openemu
 brew install --cask obs
 
 ############################################################

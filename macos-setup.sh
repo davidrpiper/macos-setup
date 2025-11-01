@@ -81,6 +81,7 @@ dprint "(Brew Cask) Basic Applications..."
 
 brew install --cask anki
 brew install --cask discord
+brew install --cask fastmail
 brew install --cask firefox
 brew install --cask gimp
 brew install --cask paragon-ntfs

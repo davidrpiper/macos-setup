@@ -192,6 +192,7 @@ dprint "> 6. Install products / plugins from Musical Tools:"
 dprint ">      - FabFilter (get from backup)"
 dprint ">      - Native Access"
 dprint ">      - IK Product Manager"
+dprint ">      - UVI.net"
 dprint "> ... And now we wait:"
 
 ############################################################

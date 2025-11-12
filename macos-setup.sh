@@ -49,7 +49,7 @@ brew update
 # General CLI Tools                                        #
 ############################################################
 
-dprint "General CLI Tools"
+dprint "General CLI Tools..."
 brew install coreutils
 brew install git
 brew install rsync
@@ -58,11 +58,11 @@ brew install wget
 brew install ffmpeg
 brew install yt-dlp
 
-dprint "Node + nvm"
-brew install node nvm
+dprint "Node..."
+brew install node
 
-dprint "Python + pyenv"
-brew install python pyenv
+dprint "Python..."
+brew install python
 
 ############################################################
 # Software CLI Tools                                       #
@@ -79,15 +79,12 @@ brew install cmake
 
 dprint "(Brew Cask) Basic Applications..."
 
-brew install --cask anki
 brew install --cask discord
 brew install --cask fastmail
 brew install --cask firefox
-brew install --cask gimp
 brew install --cask paragon-ntfs
 brew install --cask slack
 brew install --cask vlc
-brew install --cask zoom
 
 ############################################################
 # Musical Applications                                     #
@@ -112,7 +109,6 @@ dprint "(Brew Cask) Coding, Writing and Reading Applications..."
 brew install --cask calibre
 brew install --cask clion
 brew install --cask inky
-brew install --cask mactex
 brew install --cask sublime-text
 brew install --cask visual-studio-code
 
@@ -127,29 +123,13 @@ brew install --cask openemu
 brew install --cask obs
 
 ############################################################
-# Personalised Config                                      #
+# Home Directory Folders                                   #
 ############################################################
 
 dprint "Home directory folders..."
 mkdir -p ~/projects
 mkdir -p ~/tmp
-
-dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Terminal settings)"
-curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
-
-dprint "Oh-My-Zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-dprint "Aliases for .zprofile"
-cat <<EOF >> ~/.zprofile
-
-# Aliases
-alias la="ls -lAh"
-alias sub="open -a Sublime\ Text"
-alias yt="yt-dlp -S res,vcodec:h264,acodec:m4a"
-alias yt1080="yt-dlp -S res,vcodec:h264,res:1080,acodec:m4a"
-alias yt720="yt-dlp -S res,vcodec:h264,res:720,acodec:m4a"
-EOF
+mkdir -p "~/BackMeUp"
 
 ############################################################
 # Some Sensible Defaults                                   #
@@ -178,6 +158,29 @@ dprint "Disable .DS_Store files on network and USB volumes"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
+dprint "Show Macintosh HD on Desktop"
+defaults write com.apple.dock "show-recents" -bool "false" && killall Dock
+
+dprint "TextEdit default to plain text"
+defaults write com.apple.TextEdit "RichText" -bool "false" && killall TextEdit
+
+dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Terminal settings)"
+curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
+
+############################################################
+# Zsh config (can't do Oh-My-Zsh as it quits the script)   #
+############################################################
+dprint "Aliases for .zprofile"
+cat <<EOF >> ~/.zprofile
+
+# Aliases
+alias la="ls -lAh"
+alias sub="open -a Sublime\ Text"
+alias yt="yt-dlp -S res,vcodec:h264,acodec:m4a"
+alias yt1080="yt-dlp -S res,vcodec:h264,res:1080,acodec:m4a"
+alias yt720="yt-dlp -S res,vcodec:h264,res:720,acodec:m4a"
+EOF
+
 ############################################################
 # Manual Setup Remaining                                   #
 ############################################################
@@ -193,6 +196,7 @@ dprint ">      - FabFilter (get from backup)"
 dprint ">      - Native Access"
 dprint ">      - IK Product Manager"
 dprint ">      - UVI.net"
+dprint "> 7. Set up a GitHub SSH Key and other auth stuff"
 dprint "> ... And now we wait:"
 
 ############################################################

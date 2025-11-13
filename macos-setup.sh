@@ -119,7 +119,6 @@ brew install --cask visual-studio-code
 
 dprint "(Brew Cask) Games and Streaming Applications..."
 
-brew install --cask battle-net
 brew install --cask steam
 brew install --cask openemu
 brew install --cask obs

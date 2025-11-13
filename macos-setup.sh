@@ -132,6 +132,10 @@ mkdir -p ~/projects
 mkdir -p ~/tmp
 mkdir -p "~/BackMeUp"
 
+dprint "Symlink iCloud Drive..."
+sudo ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "/Volumes/iCloudDrive"
+ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "$HOME/Desktop/iCloudDrive"
+
 ############################################################
 # Some Sensible Defaults                                   #
 ############################################################

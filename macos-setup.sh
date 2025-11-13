@@ -94,6 +94,7 @@ dprint "(Brew Cask) Musical Applications..."
 
 brew install --cask ableton-live-suite
 brew install --cask audacity
+brew install --cask audio-modeling-software-center
 brew install --cask ik-product-manager
 brew install --cask focusrite-control-2
 brew install --cask musescore
@@ -196,6 +197,8 @@ dprint ">      - FabFilter (get from backup)"
 dprint ">      - Native Access"
 dprint ">      - IK Product Manager"
 dprint ">      - UVI.net"
+dprint ">      - Audio Modeling"
+dprint ">      - Orchestra Tools SINEplayer for Berlin Orchestra"
 dprint "> 7. Set up a GitHub SSH Key and other auth stuff"
 dprint "> ... And now we wait:"
 

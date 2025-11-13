@@ -124,13 +124,8 @@ brew install --cask openemu
 brew install --cask obs
 
 ############################################################
-# Home Directory Folders                                   #
+# Home Directory Folders are local, iCLoud is separate     #
 ############################################################
-
-dprint "Home directory folders..."
-mkdir -p ~/projects
-mkdir -p ~/tmp
-mkdir -p "~/BackMeUp"
 
 dprint "Symlink iCloud Drive..."
 sudo ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "/Volumes/iCloudDrive"

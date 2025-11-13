@@ -169,6 +169,14 @@ dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Termina
 curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
 
 ############################################################
+# Git config (don't specify username or email by default)  #
+############################################################
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
+
+############################################################
 # Zsh config (can't do Oh-My-Zsh as it quits the script)   #
 ############################################################
 dprint "Aliases for .zprofile"
@@ -178,6 +186,7 @@ cat <<EOF >> ~/.zprofile
 alias la="ls -lAh"
 alias sub="open -a Sublime\ Text"
 alias yt="yt-dlp -S res,vcodec:h264,acodec:m4a"
+alias ytyt="yt-dlp -S res,vcodec:h264,acodec:m4a -o \"%(title)s.%(ext)s\" --embed-thumbnail"
 alias yt1080="yt-dlp -S res,vcodec:h264,res:1080,acodec:m4a"
 alias yt720="yt-dlp -S res,vcodec:h264,res:720,acodec:m4a"
 EOF

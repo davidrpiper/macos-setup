@@ -128,8 +128,8 @@ brew install --cask obs
 ############################################################
 
 dprint "Symlink iCloud Drive..."
-sudo ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "/Volumes/iCloudDrive"
-ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" "$HOME/Desktop/iCloudDrive"
+ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs/David" "$HOME/David"
+ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs/David" "$HOME/Desktop/David"
 
 ############################################################
 # Some Sensible Defaults                                   #

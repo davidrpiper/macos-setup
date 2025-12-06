@@ -168,12 +168,15 @@ dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Termina
 curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
 
 ############################################################
-# Git config (don't specify username or email by default)  #
+# Git config                                               #
 ############################################################
 git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
+
+git config --global user.name "David Piper"
+git config --global user.email dpiper.public@gmail.com
 
 ############################################################
 # Zsh config (can't do Oh-My-Zsh as it quits the script)   #

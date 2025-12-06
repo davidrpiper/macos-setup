@@ -195,7 +195,7 @@ EOF
 ############################################################
 
 dprint "🚶🏻‍♂️ A few remaining manual steps are needed, while the Mac App Store apps install:"
-dprint "> 1. Install uBlock Origin in Firefox"
+dprint "> 1. Install uBlock Origin and Multi-Account Containers in Firefox"
 dprint "> 2. Set up the Catppuccin Latte theme for the Terminal (it's in Downloads), and IDEs"
 dprint "> 3. Install Sony Digital Paper App: https://www.sony.com/electronics/support/articles/S1F1667"
 dprint "> 4. Build and install whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"

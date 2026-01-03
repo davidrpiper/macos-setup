@@ -80,11 +80,11 @@ brew install cmake
 dprint "(Brew Cask) Basic Applications..."
 
 brew install --cask discord
+brew install --cask iina
 brew install --cask fastmail
 brew install --cask firefox
 brew install --cask paragon-ntfs
 brew install --cask slack
-brew install --cask vlc
 
 ############################################################
 # Musical Applications                                     #

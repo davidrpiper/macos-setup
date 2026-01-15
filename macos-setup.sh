@@ -97,6 +97,7 @@ brew install --cask audacity
 brew install --cask audio-modeling-software-center
 brew install --cask ik-product-manager
 brew install --cask focusrite-control-2
+brew install --cask midi-monitor
 brew install --cask musescore
 brew install --cask native-access
 brew install --cask vcv-rack

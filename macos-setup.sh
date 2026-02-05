@@ -79,6 +79,7 @@ brew install cmake
 
 dprint "(Brew Cask) Basic Applications..."
 
+brew install --cask anki
 brew install --cask discord
 brew install --cask iina
 brew install --cask fastmail

@@ -96,6 +96,7 @@ dprint "(Brew Cask) Musical Applications..."
 brew install --cask ableton-live-suite
 brew install --cask audacity
 brew install --cask audio-modeling-software-center
+brew install --cask blackhole-2ch
 brew install --cask ik-product-manager
 brew install --cask focusrite-control-2
 brew install --cask midi-monitor

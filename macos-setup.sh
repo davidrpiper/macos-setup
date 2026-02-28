@@ -214,7 +214,6 @@ dprint ">      - UVI.net"
 dprint ">      - Audio Modeling"
 dprint ">      - Orchestra Tools SINEplayer for Berlin Orchestra"
 dprint ">      - Continuata for Berlin Orchestra: https://continuata.com/download-app"
-dprint ">      - Osmose Firmware"
 dprint "> 7. Set up a GitHub SSH Key and other auth stuff"
 dprint "> ... And now we wait:"
 

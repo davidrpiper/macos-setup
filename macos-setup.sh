@@ -140,6 +140,12 @@ ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs/David" "$HOME/Desktop/
 
 dprint "Setting defaults..."
 
+dprint "Turn off Desktop hot-corners"
+defaults write com.apple.dock wvous-tl-corner -int 0
+defaults write com.apple.dock wvous-tr-corner -int 0
+defaults write com.apple.dock wvous-bl-corner -int 0
+defaults write com.apple.dock wvous-br-corner -int 0
+
 dprint "Expand save panels by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
@@ -162,13 +168,17 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 dprint "Show Macintosh HD on Desktop"
-defaults write com.apple.dock "show-recents" -bool "false" && killall Dock
+defaults write com.apple.dock "show-recents" -bool "false"
 
 dprint "TextEdit default to plain text"
-defaults write com.apple.TextEdit "RichText" -bool "false" && killall TextEdit
+defaults write com.apple.TextEdit "RichText" -bool "false"
 
 dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Terminal settings)"
 curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
+
+dprint "Reset applications for changes to take effect"
+killall TextEdit
+killall Dock
 
 ############################################################
 # Git config                                               #

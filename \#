@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# This script allows you to comment out individual pipe elements:
+# cmd1 | \# cmd2 | cmd3 =====> cmd1 | cmd3
+#
+# As opposed to:
+# cmd1 # | cmd2 | cmd3  =====> cmd1
+
+cat

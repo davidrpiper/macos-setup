@@ -173,6 +173,9 @@ defaults write com.apple.dock "show-recents" -bool "false"
 dprint "TextEdit default to plain text"
 defaults write com.apple.TextEdit "RichText" -bool "false"
 
+dprint "Disable excess Tahoe menu icons (requires logout)"
+defaults write NSGlobalDomain NSMenuEnableActionImages -bool false
+
 dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Terminal settings)"
 curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
 

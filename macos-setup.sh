@@ -102,6 +102,7 @@ brew install --cask focusrite-control-2
 brew install --cask midi-monitor
 brew install --cask musescore
 brew install --cask native-access
+brew install --cask surge-xt
 brew install --cask vcv-rack
 
 ############################################################

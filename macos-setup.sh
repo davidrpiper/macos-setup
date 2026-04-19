@@ -115,7 +115,7 @@ brew install --cask calibre
 brew install --cask clion
 brew install --cask inky
 brew install --cask sublime-text
-brew install --cask visual-studio-code
+brew install --cask webstorm
 
 ############################################################
 # Video and Games                                          #

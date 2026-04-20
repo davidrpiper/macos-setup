@@ -79,6 +79,7 @@ brew install cmake
 
 dprint "(Brew Cask) Basic Applications..."
 
+brew install --cask sublime-text
 brew install --cask anki
 brew install --cask discord
 brew install --cask iina
@@ -114,7 +115,6 @@ dprint "(Brew Cask) Coding, Writing and Reading Applications..."
 brew install --cask calibre
 brew install --cask clion
 brew install --cask inky
-brew install --cask sublime-text
 brew install --cask webstorm
 
 ############################################################
@@ -181,7 +181,6 @@ dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Termina
 curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
 
 dprint "Reset applications for changes to take effect"
-killall TextEdit
 killall Dock
 
 ############################################################
@@ -251,11 +250,6 @@ mas install 1310686187
 
 dprint "Pixelmator Pro..."
 mas install 1289583905
-
-dprint "Pages, Numbers, Keynote..."
-mas install 409201541
-mas install 409203825
-mas install 409183694
 
 dprint "Logic Pro..."
 mas install 634148309

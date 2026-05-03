@@ -198,7 +198,7 @@ dprint ".zprofile"
 cat <<EOF >> ~/.zprofile
 
 # Python 3.11
-# export PATH="/opt/homebrew/opt/pythong@3.11/libexec/bin:$PATH"
+# export PATH="/opt/homebrew/opt/python@3.11/libexec/bin:$PATH"
 
 # Aliases
 alias la="ls -lAh"

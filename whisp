@@ -1,0 +1,26 @@
+#!/bin/zsh
+set -euo pipefail
+
+format=lrc
+if (( $# >= 1 )) && [[ $1 == -txt ]]; then
+	format=txt
+	shift
+fi
+
+if (( $# != 1 )); then
+	print -u2 "usage: whisp [-txt] <media-file>"
+	exit 2
+fi
+
+input=$1
+[[ -f $input ]] || { print -u2 "whisp: not a file: $input"; exit 1 }
+
+model=$HOME/Applications/whisper.cpp/models/ggml-medium.en.bin
+cli=$HOME/Applications/whisper.cpp/build/bin/whisper-cli
+out="$(date +%Y%m%d-%H%M%S)-${input:t:r}"
+
+"$cli" -m "$model" "-o${format}" -of "$out" \
+	-f =(ffmpeg -nostdin -loglevel error -i "$input" \
+				-ar 16000 -ac 1 -c:a pcm_s16le -f wav pipe:1)
+
+print "→ $PWD/${out}.${format}"

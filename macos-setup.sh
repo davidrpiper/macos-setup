@@ -61,9 +61,6 @@ brew install yt-dlp
 dprint "Node..."
 brew install node
 
-dprint "Python..."
-brew install python
-
 ############################################################
 # Software CLI Tools                                       #
 ############################################################
@@ -197,8 +194,11 @@ git config --global user.email dpiper.public@gmail.com
 ############################################################
 # Zsh config (can't do Oh-My-Zsh as it quits the script)   #
 ############################################################
-dprint "Aliases for .zprofile"
+dprint ".zprofile"
 cat <<EOF >> ~/.zprofile
+
+# Python 3.11
+# export PATH="/opt/homebrew/opt/pythong@3.11/libexec/bin:$PATH"
 
 # Aliases
 alias la="ls -lAh"

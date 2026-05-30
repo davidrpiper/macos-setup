@@ -220,7 +220,7 @@ dprint "> 3. Install Sony Digital Paper App: https://www.sony.com/electronics/su
 dprint "> 4. Build and install whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"
 dprint "> 5. Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home"
 dprint "> 6. Install products / plugins from Musical Tools:"
-dprint ">      - FabFilter (get from backup)"
+dprint ">      - FabFilter"
 dprint ">      - Native Access"
 dprint ">      - IK Product Manager"
 dprint ">      - UVI.net"

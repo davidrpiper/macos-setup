@@ -231,6 +231,7 @@ dprint ">      - Continuata for Berlin Orchestra: https://continuata.com/downloa
 dprint ">      - Midinous"
 dprint "> 7. Set up a GitHub SSH Key and other auth stuff"
 dprint "> 8. And if you really want it: brew install --cask mactex"
+dprint "> 9. Plus, Crossover if you're going to be gaming"
 dprint "> ... And now we wait:"
 
 ############################################################

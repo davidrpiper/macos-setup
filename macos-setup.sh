@@ -30,11 +30,15 @@ else
 fi
 
 ############################################################
-# Basic CLI Tools                                          #
+# Xcode CLI Tools                                          #
 ############################################################
 
 dprint "Xcode Command Line Tools"
 xcode-select --install
+
+############################################################
+# Homebrew                                                 #
+############################################################
 
 dprint "Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -46,29 +50,15 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 brew update
 
 ############################################################
-# General CLI Tools                                        #
+# CLI Tools                                                #
 ############################################################
 
-dprint "General CLI Tools..."
-brew install coreutils
-brew install git
+dprint "CLI Tools..."
+brew install coreutils git wget rg jq cmake 
 brew install rsync
-brew install syncthing
-brew install wget
 brew install ffmpeg
 brew install yt-dlp
-
-dprint "Node..."
 brew install node
-
-############################################################
-# Software CLI Tools                                       #
-############################################################
-
-dprint "Software CLI Tools"
-brew install rg
-brew install jq
-brew install cmake
 
 ############################################################
 # Basic Applications                                       #
@@ -77,12 +67,10 @@ brew install cmake
 dprint "(Brew Cask) Basic Applications..."
 
 brew install --cask sublime-text
-brew install --cask anki
-brew install --cask discord
-brew install --cask iina
-brew install --cask fastmail
 brew install --cask firefox
-brew install --cask paragon-ntfs
+brew install --cask fastmail
+brew install --cask iina
+brew install --cask discord
 brew install --cask slack
 
 ############################################################
@@ -91,15 +79,15 @@ brew install --cask slack
 
 dprint "(Brew Cask) Musical Applications..."
 
-brew install --cask ableton-live-suite
+brew install --cask ableton-live-suite                  # ++
 brew install --cask audacity
-brew install --cask audio-modeling-software-center
+brew install --cask audio-modeling-software-center      # ++
 brew install --cask blackhole-2ch
-brew install --cask ik-product-manager
+brew install --cask ik-product-manager                  # ++
 brew install --cask focusrite-control-2
 brew install --cask midi-monitor
 brew install --cask musescore
-brew install --cask native-access
+brew install --cask native-access                       # ++
 brew install --cask surge-xt
 brew install --cask vcv-rack
 
@@ -107,9 +95,8 @@ brew install --cask vcv-rack
 # Code & Writing Applications                              #
 ############################################################
 
-dprint "(Brew Cask) Coding, Writing and Reading Applications..."
+dprint "(Brew Cask) Coding and Writing Applications..."
 
-brew install --cask calibre
 brew install --cask clion
 brew install --cask inky
 brew install --cask webstorm
@@ -120,17 +107,37 @@ brew install --cask webstorm
 
 dprint "(Brew Cask) Games and Streaming Applications..."
 
-brew install --cask steam
+brew install --cask steam                               # ++
 brew install --cask openemu
 brew install --cask obs
 
 ############################################################
-# Home Directory Folders are local, iCLoud is separate     #
+# Mac App Store                                            #
+############################################################
+
+dprint "Mac App Store Apps (excluding the big ones)..."
+
+dprint "Installing mas"
+brew install mas
+
+dprint "Monodraw..."
+mas install 920404675
+
+dprint "Scrivener..."
+mas install 1310686187
+
+dprint "Pixelmator Pro..."
+mas install 1289583905
+
+dprint "Uninstalling mas"
+brew uninstall mas
+
+############################################################
+# Home Directory Folders are local, iCloud is separate     #
 ############################################################
 
 dprint "Symlink iCloud Drive..."
 ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs/David" "$HOME/David"
-ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs/David" "$HOME/Desktop/David"
 
 ############################################################
 # Some Sensible Defaults                                   #
@@ -177,7 +184,7 @@ defaults write NSGlobalDomain NSMenuEnableActionImages -bool false
 dprint "Catppuccin-Latte Terminal theme (requires manual post-install in Terminal settings)"
 curl -o ~/Downloads/Catppuccin-Latte.terminal https://raw.githubusercontent.com/davidrpiper/Terminal.app/main/themes/catppuccin-latte.terminal
 
-dprint "Reset applications for changes to take effect"
+dprint "killall Dock"
 killall Dock
 
 ############################################################
@@ -215,16 +222,13 @@ EOF
 
 dprint "🚶🏻‍♂️ A few remaining manual steps are needed, while the Mac App Store apps install:"
 dprint "> 1. Install uBlock Origin and Multi-Account Containers in Firefox"
-dprint "> 2. Set up the Catppuccin Latte theme for the Terminal (it's in Downloads), and IDEs"
+dprint "> 2. Set up the Catppuccin Latte theme for the Terminal (it's in ~/Downloads), and IDEs"
 dprint "> 3. Install Sony Digital Paper App: https://www.sony.com/electronics/support/articles/S1F1667"
 dprint "> 4. Build and install whisper.cpp manually: https://github.com/ggml-org/whisper.cpp"
 dprint "> 5. Install Vulkan SDK: https://vulkan.lunarg.com/sdk/home"
 dprint "> 6. Install products / plugins from Musical Tools:"
 dprint ">      - FabFilter"
-dprint ">      - Native Access"
-dprint ">      - IK Product Manager"
 dprint ">      - UVI.net"
-dprint ">      - Audio Modeling"
 dprint ">      - Orchestra Tools SINEplayer for Berlin Orchestra"
 dprint ">.     - Sforzando"
 dprint ">      - Continuata for Berlin Orchestra: https://continuata.com/download-app"
@@ -233,36 +237,6 @@ dprint "> 7. Set up a GitHub SSH Key and other auth stuff"
 dprint "> 8. And if you really want it: brew install --cask mactex"
 dprint "> 9. Plus, Crossover if you're going to be gaming"
 dprint "> ... And now we wait:"
-
-############################################################
-# Mac App Store                                            #
-############################################################
-
-dprint "Mac App Store Apps..."
-
-dprint "Installing mas"
-brew install mas
-
-dprint "Monodraw..."
-mas install 920404675
-
-dprint "Scrivener..."
-mas install 1310686187
-
-dprint "Pixelmator Pro..."
-mas install 1289583905
-
-dprint "Logic Pro..."
-mas install 634148309
-
-dprint "Final Cut Pro..."
-mas install 424389933
-
-dprint "And of course, Xcode..."
-mas install 497799835
-
-dprint "Uninstalling mas"
-brew uninstall mas
 
 ############################################################
 # Complete!                                                #

@@ -107,8 +107,9 @@ brew install --cask webstorm
 
 dprint "(Brew Cask) Games and Streaming Applications..."
 
-brew install --cask steam                               # ++
+brew install --cask steam
 brew install --cask openemu
+brew install --cask scummvm # For Hoyle Classic Games
 brew install --cask obs
 
 ############################################################

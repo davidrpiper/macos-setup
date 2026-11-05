@@ -80,12 +80,10 @@ brew install --cask slack
 dprint "(Brew Cask) Musical Applications..."
 
 brew install --cask ableton-live-suite                  # ++
-brew install --cask audacity
 brew install --cask audio-modeling-software-center      # ++
 brew install --cask blackhole-2ch
 brew install --cask ik-product-manager                  # ++
 brew install --cask focusrite-control-2
-brew install --cask midi-monitor
 brew install --cask musescore
 brew install --cask native-access                       # ++
 brew install --cask surge-xt
@@ -99,7 +97,6 @@ dprint "(Brew Cask) Coding and Writing Applications..."
 
 brew install --cask clion
 brew install --cask inky
-brew install --cask webstorm
 
 ############################################################
 # Video and Games                                          #
@@ -109,7 +106,7 @@ dprint "(Brew Cask) Games and Streaming Applications..."
 
 brew install --cask steam
 brew install --cask openemu
-brew install --cask scummvm # For Hoyle Classic Games
+# brew install --cask scummvm # For Hoyle Classic Games
 brew install --cask obs
 
 ############################################################
@@ -234,6 +231,7 @@ dprint ">      - Orchestra Tools SINEplayer for Berlin Orchestra"
 dprint ">.     - Sforzando"
 dprint ">      - Continuata for Berlin Orchestra: https://continuata.com/download-app"
 dprint ">      - Midinous"
+dprint ">      - TG Pro (tunabellysoftware Fan Controller)"
 dprint "> 7. Set up a GitHub SSH Key and other auth stuff"
 dprint "> 8. And if you really want it: brew install --cask mactex"
 dprint "> 9. Plus, Crossover if you're going to be gaming"
